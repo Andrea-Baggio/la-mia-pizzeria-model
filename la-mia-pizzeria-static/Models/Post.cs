@@ -15,10 +15,9 @@
         }
 
         public int Id { get; set; }
-        public string NomePizza { get; set; }
-        public string Immagine { get; set; }
-        public string Ingredienti { get; set; }
+        public string NomePizza { get; set; } = string.Empty;
+        public string Immagine { get; set; } = string.Empty;
+        public string Ingredienti { get; set; } = string.Empty;
         public decimal Prezzo { get; set; }
-        
     }
 }
