@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-//using Post.Models;
 
 namespace la_mia_pizzeria_static.Models
 {

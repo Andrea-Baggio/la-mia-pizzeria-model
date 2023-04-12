@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-//using Post.Models;
+using la_mia_pizzeria_static.Models;
 
 namespace la_mia_pizzeria_static.Controllers
 {
@@ -7,7 +7,10 @@ namespace la_mia_pizzeria_static.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            using var ctx = new PizzaContext();
+            var posts = ctx.Posts.ToArray();
+
+            return View(posts);
         }
     }
 }
